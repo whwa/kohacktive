@@ -1,11 +1,13 @@
-var express = require('express');
-var app = express();
-console.log(__dirname)
+const express = require('express');
+var bodyParser = require('body-parser')
+const app = express();
+const helpers = require('./helpers')
+
 app.use(express.static(__dirname + '/../client/'));
 
-// app.get('/', function(req, res){
-//   res.send('hello world');
-// });
+app.post('/', helpers.sendMessage, function(req, res){
+  res.send('delivered');
+});
 
 app.listen(3000);
 
