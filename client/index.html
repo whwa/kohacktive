@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Email</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="main.css">
   <script
@@ -12,6 +13,15 @@
 </head>
 <body>
   hello you fool
+  <form id="form" method="post">
+    <label for="sender-email">Sender Email</label>
+    <input type="text" name="name" id="sender-email" placeholder="sender email" />
+    <label for="receiver-email">Receiver Email</label>
+    <input type="email" name="email" id="receiver-emai" placeholder="receiver email" />
+    <label for="message">Message</label>
+    <input type="text" name="email" id="message" placeholder="whatcha wanna say?"/>
+    <button type="submit">Send it!</button>
+  </form>
 </body>
 
 </html>
