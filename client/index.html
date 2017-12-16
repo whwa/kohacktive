@@ -12,14 +12,15 @@
   <script src="index.js"></script>
 </head>
 <body>
-  hello you fool
-  <form id="form" method="post">
-    <label for="sender-email">Sender Email</label>
-    <input type="text" name="name" id="sender-email" placeholder="sender email" />
-    <label for="receiver-email">Receiver Email</label>
-    <input type="email" name="email" id="receiver-emai" placeholder="receiver email" />
+  <form id="form">
+    <label for="to">Receiver Email</label>
+    <input type="email" id="to" placeholder="where to?" />
+    <label for="from">Sender Email</label>
+    <input type="email" id="from" placeholder="from whom?" />
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" placeholder="subject"/>
     <label for="message">Message</label>
-    <input type="text" name="email" id="message" placeholder="whatcha wanna say?"/>
+    <input type="text" id="message" placeholder="whatcha wanna say?"/>
     <button type="submit">Send it!</button>
   </form>
 </body>
