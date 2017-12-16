@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/whwa/kohacktive#readme",
   "dependencies": {
+    "@sendgrid/mail": "^6.1.4",
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
     "express": "^4.16.2"
   }
 }
